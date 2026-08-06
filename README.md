@@ -2,7 +2,7 @@
 
 Herramienta web para analizar **todos los metadatos de una imagen localmente en el navegador**: EXIF, GPS, IPTC, XMP, perfiles ICC, chunks PNG y MakerNotes. La imagen nunca sale del dispositivo del usuario.
 
-Parte del portfolio [`tools-cybersecurity`](../CONVENTIONS.md), pensada para periodistas y defensores de derechos humanos que necesitan saber qué revela una foto o captura de pantalla **antes** de publicarla o compartirla — o qué revela una imagen que recibieron.
+Parte del portfolio [`tools-cybersecurity`](../CONVENTIONS.md), pensada para periodistas y defensores de derechos humanos que necesitan saber qué revela una foto o captura de pantalla **antes** de publicarla o compartirla, o qué revela una imagen que recibieron.
 
 ## Por qué
 
@@ -31,7 +31,7 @@ Antes del volcado completo, un resumen con severidades de **qué revela la image
 | Miniatura incrustada | MEDIO | thumbnail EXIF que puede mostrar el original **sin recortar** |
 | Rastro de software | BAJO | Software, CreatorTool, historial XMP |
 
-La miniatura incrustada se **extrae y se muestra junto a la imagen** para compararlas — en imágenes editadas suele conservar la versión previa al recorte.
+La miniatura incrustada se **extrae y se muestra junto a la imagen** para compararlas: en imágenes editadas suele conservar la versión previa al recorte.
 
 ### 2. Inteligencia de capturas de pantalla
 
@@ -62,7 +62,7 @@ JPEG, PNG, HEIC/HEIF, WebP, TIFF (+ RAW basados en TIFF), AVIF, GIF. SVG y desco
 ## Límites honestos
 
 - Lee **metadatos**, no píxeles: no ve caras, documentos ni reflejos, y no detecta esteganografía.
-- Las inferencias de capturas son heurísticas — pistas, no hechos.
+- Las inferencias de capturas son heurísticas: pistas, no hechos.
 - La copia limpia elimina también el perfil de color (en imágenes de gama amplia el color puede variar ligeramente).
 - Un adversario puede editar metadatos: su ausencia o contenido no prueba nada por sí solo.
 

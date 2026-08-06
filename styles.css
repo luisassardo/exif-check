@@ -1,4 +1,4 @@
-/* HashCheck — tool-specific styling on top of node.css (ARGUS design system).
+/* HashCheck: tool-specific styling on top of node.css (ARGUS design system).
    The working tool lives inside the ops panel; these rules dress its controls
    in the tactical look. All functional IDs/classes are driven by app.js. */
 
@@ -198,7 +198,7 @@ main { align-items: start; }
 .about strong { color: var(--fg); }
 
 /* =============================================================
-   ExifCheck-specific — severity system, verdict, dump, cleaner
+   ExifCheck-specific: severity system, verdict, dump, cleaner
    ============================================================= */
 :root {
   --sev-critical: oklch(0.66 0.21 25);

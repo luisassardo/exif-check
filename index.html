@@ -56,8 +56,8 @@
 
     <div class="features">
       <div class="feature"><span class="fnum mono">01</span><span class="fi" data-ico="cloudOff"></span><h3 data-i18n="feat1_t">Local-only</h3><p data-i18n="feat1_d">The image is read in-memory and never uploaded. No server touches your data.</p></div>
-      <div class="feature"><span class="fnum mono">02</span><span class="fi" data-ico="radar"></span><h3 data-i18n="feat2_t">Risk verdict first</h3><p data-i18n="feat2_d">A summary of what the image reveals — location, device, identity — before the full field dump.</p></div>
-      <div class="feature"><span class="fnum mono">03</span><span class="fi" data-ico="fingerprint"></span><h3 data-i18n="feat3_t">Screenshot intelligence</h3><p data-i18n="feat3_d">Screenshots carry little classic EXIF, so ExifCheck infers device, OS and time from dimensions, chunks and filename — always labeled as inference.</p></div>
+      <div class="feature"><span class="fnum mono">02</span><span class="fi" data-ico="radar"></span><h3 data-i18n="feat2_t">Risk verdict first</h3><p data-i18n="feat2_d">A summary of what the image reveals (location, device, identity) before the full field dump.</p></div>
+      <div class="feature"><span class="fnum mono">03</span><span class="fi" data-ico="fingerprint"></span><h3 data-i18n="feat3_t">Screenshot intelligence</h3><p data-i18n="feat3_d">Screenshots carry little classic EXIF, so ExifCheck infers device, OS and time from dimensions, chunks and filename, always labeled as inference.</p></div>
       <div class="feature"><span class="fnum mono">04</span><span class="fi" data-ico="document"></span><h3 data-i18n="feat4_t">Clean copy</h3><p data-i18n="feat4_d">Lossless metadata stripping for JPEG, PNG and WebP: same pixels, zero metadata, verified after cleaning.</p></div>
     </div>
 
@@ -87,7 +87,7 @@
             <span data-i18n="choose_file">Choose image</span>
             <input type="file" id="file-input" accept="image/*,.heic,.heif,.avif,.tif,.tiff,.webp" hidden>
           </label>
-          <p class="drop-note" data-i18n="drop_note">JPEG, PNG, HEIC, WebP, TIFF, AVIF, GIF. Processed entirely in your browser — it never leaves your device.</p>
+          <p class="drop-note" data-i18n="drop_note">JPEG, PNG, HEIC, WebP, TIFF, AVIF, GIF. Processed entirely in your browser: it never leaves your device.</p>
         </section>
 
         <!-- analysis -->
@@ -143,7 +143,7 @@
           <!-- screenshot inference -->
           <section id="shot-section" class="shot-section hidden">
             <h2 class="block-label" data-i18n="shot_label">Screenshot analysis</h2>
-            <p class="hint" data-i18n="shot_hint">Screenshots carry little classic EXIF. Everything below is inferred from indirect evidence and labeled as such — treat it as a lead, not a fact.</p>
+            <p class="hint" data-i18n="shot_hint">Screenshots carry little classic EXIF. Everything below is inferred from indirect evidence and labeled as such: treat it as a lead, not a fact.</p>
             <div id="shot-list"></div>
           </section>
 

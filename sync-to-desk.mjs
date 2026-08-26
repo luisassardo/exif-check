@@ -11,7 +11,7 @@
 //
 // Two consumers today:
 //   the J-LAB desk   renders the engine as a native screen (STD-024)
-//   verify-desk      builds on it instead of reimplementing metadata parsing
+//   the C-LAB desk   same contract, the tool's home lab
 //
 // The file keeps the name sync-to-desk.mjs even though it now feeds a sibling
 // tool as well: check-rules.sh check 5 finds these by exact filename, and being
@@ -35,9 +35,9 @@ const CONSUMERS = [
     create: true
   },
   {
-    path: join(ROOT, '03-j-lab', 'verify-desk'),
-    lock: '.engine-lock',
-    create: false
+    path: join(ROOT, '01-web', 'c-lab-site', 'static', 'js', 'vendor', 'exif-check'),
+    lock: '.tool-lock',
+    create: true
   }
 ];
 
